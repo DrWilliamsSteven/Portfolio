@@ -13,7 +13,7 @@ var projectData = [{
 			"description": "Freecodecamp project",
 			"name": "Tic Tac Toe",
 			"url": "https://rawgit.com/DrWilliamsSteven/tictactoe/master/tictactoe.html"	,
-				"imgurl": "screenshots/tictactoe.png"
+			"imgurl": "screenshots/tictactoe.png"
 		}
 	},	{
 		"project": {
@@ -27,33 +27,27 @@ var projectData = [{
 			"description": "Freecodecamp project",
 			"name": "Calculator",
 			"url": "https://rawgit.com/DrWilliamsSteven/calculator/master/calculator.html"	,
-	"imgurl": "screenshots/calculator.png"			
+			"imgurl": "screenshots/calculator.png"			
 		}
 	},{
 		"project": {
 			"description": "Freecodecamp project",
 			"name": "Codepen clone",
 			"url": "https://rawgit.com/DrWilliamsSteven/codepen-clone/master/codepenclone.html",
-	"imgurl": "screenshots/codepenclone.png"			
+			"imgurl": "screenshots/codepenclone.png"			
 		}
 	},{
 		"project": {
 			"description": "Freecodecamp project",
 			"name": "Local weather",
 			"url": "http://codepen.io/drwilliamssteven/full/wzAEWE/"	,
-				"imgurl": "screenshots/local-weather.png"
+			"imgurl": "screenshots/local-weather.png"
 		}
-	},
-
-
-
-
-	
+	}	
 	];
 
 	var getProjects = function() {
 		for (var i = 0; i < projectData.length; i++) {
-
 					
 				// get project info for  container
 				var displayname = projectData[i].project.name;
@@ -66,28 +60,21 @@ var projectData = [{
 					var description = description_full.substring(0, description_full.indexOf(" ", 50)) + "...";
 				}
 
-
 			//build html container and fill with project info
 			var html = "";
 
-			html += "<div id='f1_container'>";
-			html += "<div class='shadow' id='f1_card' >";
+			html += "<div class='gallery_container'>";
+			html += "<div class= ' '>";
 			
 			html += "<a href='" + linkurl + "'>";
-			html +=  '<div class="thumbnail front face">';
+			html +=  '<div class="project_img">';
 			html +=  "<img src='" + imgurl +  "' alt='"  + displayname + "'>";
 			html += "</div>";
-			
-			html += '<div class="caption back face center">';
-			html += "<h3>" +displayname + "</h3>";
-			html += "<p>" + description + "</p>"
+							
 			html += "</div>";
+			html += "</div>";		
 
-			html += "</a>";
-			html += "</div>";
-			html += "</div>";
 			
-		
 
 			var div = document.getElementById('gallery');
 			div.innerHTML += html;
