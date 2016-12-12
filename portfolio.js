@@ -5,7 +5,7 @@ var projectData = [{
 		"project": {
 			"description": "Freecodecamp project",
 			"name": "Simon game",
-			"url": "https://rawgit.com/DrWilliamsSteven/Simon-game/master/simon-game.html"	,	
+			"url": "https://drwilliamssteven.github.io/Simon-game/simon-game.html"	,	
 			"imgurl": "screenshots/simon.png"
 		}
 	},	{

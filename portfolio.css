@@ -1,10 +1,6 @@
-html { 
-
-}
-
 
 body {
-
+	background-color: #f7f7f7;
 }
 
 .menu {
@@ -58,6 +54,11 @@ li a:hover {
     padding: 0;
 }
 
+#footer li a:hover {
+    background-color: #333;
+
+}
+
 .jumbotron {
 	background: url(9cmupez8wlo-i-m-priscilla.jpg) no-repeat center center ; 
 	background-size: cover;	
@@ -102,6 +103,9 @@ li a:hover {
 	text-decoration: none;
 }
 
+.row h1 {
+	margin-bottom: 40px;
+}
 
 /* code for flipping */
 
