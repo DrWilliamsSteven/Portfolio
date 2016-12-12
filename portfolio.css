@@ -21,7 +21,7 @@ body {
 }
 
 .jumbotron {
-		background: url(9cmupez8wlo-i-m-priscilla.jpg) no-repeat center center fixed; 
+		background: url(9cmupez8wlo-i-m-priscilla.jpg) no-repeat center center ; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -42,4 +42,14 @@ body {
 
 #about {
 	text-align: center;
+}
+
+#portfolio {
+	text-align: center;
+}
+
+iframe {
+	height: 250px;
+	width: 350px;
+	scroll: no;
 }

@@ -1,39 +1,54 @@
 $(document).ready(function() {
 
 
-var projectsData = [{
+var projectData = [{
 		"project": {
 			"description": "Freecodecamp project",
 			"name": "Simon game",
-			"url": "https://www.twitch.tv/freecodecamp"			
+			"url": "https://rawgit.com/DrWilliamsSteven/Simon-game/master/simon-game.html"			
 		}
-	},
-	
-	{
+	},	{
 		"project": {
 			"description": "Freecodecamp project",
 			"name": "Tic Tac Toe",
-			"url": "https://www.twitch.tv/freecodecamp"			
+			"url": "https://rawgit.com/DrWilliamsSteven/tictactoe/master/tictactoe.html"			
 		}
-	}
-	
-	
+	},	{
+		"project": {
+			"description": "Freecodecamp project",
+			"name": "Pomodoro Clock",
+			"url": "https://rawgit.com/DrWilliamsSteven/pomodoro-clock/master/pomodoro.html"			
+		}
+	},	{
+		"project": {
+			"description": "Freecodecamp project",
+			"name": "Calculator",
+			"url": "https://rawgit.com/DrWilliamsSteven/calculator/master/calculator.html"			
+		}
+	},{
+		"project": {
+			"description": "Freecodecamp project",
+			"name": "Codepen clone",
+			"url": "https://rawgit.com/DrWilliamsSteven/codepen-clone/master/codepenclone.html"			
+		}
+	},{
+		"project": {
+			"description": "Freecodecamp project",
+			"name": "Local weather",
+			"url": "http://codepen.io/drwilliamssteven/full/wzAEWE/"			
+		}
+	},
+
+
+
+
 	
 	];
 
-	var getprojectts = function() {
+	var getProjects = function() {
 		for (var i = 0; i < projectData.length; i++) {
 
-			if (projectData[i].project === null || projectData[i].project === undefined) {
-			
-				var displayname = projectData[i]..project.name;
-				var imageurl = imageurl + "test";
-				var description = "";
-				var streamerurl = projectData[i].project === null ? 'https://www.twitch.tv/' + displayname : 'https://www.twitch.tv/';				
-				streamerurl = encodeURI(streamerurl);				
-				var onlineStatus= projectData[i].stream === null ? "offline" : "unavailable";
-			} else {
-			
+					
 				// get user info for streamer container
 				var displayname = projectData[i].project.name;
 				var linkurl = projectData[i].project.url;
@@ -48,14 +63,18 @@ var projectsData = [{
 			//build html container and fill with streamer info
 			var html = "";
 
-			html += "<div class='streamer " + onlineStatus + "'>";
-			html += "<img class='streamer-component' id='thumbnail' src='" + imageurl + "' alt='streamer logo'>";
-			html += "<div class='streamer-component' id='caption'>";
-			html += "<h3><a id='username' href='" + streamerurl + "' target='_blank'>" + displayname + "</a></h3>";
-			html += "<p id='status'>" + displayname + " is currently " + onlineStatus + "</p>";
-			html += "<p id='contentdescription'>" + description + "</p>";
+			html += "<div class='col-sm-6 col-md-4'>";
+			html +=  '<div class="thumbnail">';
+			html +=  "<iframe src='" + linkurl +  "' alt='"  + displayname + "'></iframe>";
+			html += '<div class="caption">';
+			html += "<h3>'" +displayname + "'</h3>";
+			html += "<p>'" + description + "'</p>"
 			html += "</div>";
 			html += "</div>";
+			html += "</div>";
+			
+
+			
 
 			var div = document.getElementById('gallery');
 			div.innerHTML += html;
@@ -63,5 +82,6 @@ var projectsData = [{
 		}
 	};
 
-	getStreamers();
+	getProjects();
+	
 });
