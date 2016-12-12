@@ -11,7 +11,7 @@ body {
 .navbar {
 	background-color:  #f6a01d;
 	color: black;
-	font-size: 200%;
+	font-size: 100%;
 
 
 }
@@ -38,4 +38,8 @@ body {
 .jumbotron .btn {
 	background-color: #934A51;
 	border: solid 1px black;
+}
+
+#about {
+	text-align: center;
 }
