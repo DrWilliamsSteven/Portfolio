@@ -71,7 +71,7 @@ var projectData = [{
 			var html = "";
 
 			html += "<div id='f1_container'>";
-			html += "<div class='col-sm-6 col-md-4 shadow' id='f1_card' >";
+			html += "<div class='shadow' id='f1_card' >";
 			
 			html += "<a href='" + linkurl + "'>";
 			html +=  '<div class="thumbnail front face">';
